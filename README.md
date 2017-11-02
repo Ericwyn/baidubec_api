@@ -19,12 +19,14 @@ Add topics，通过多组access key 信息，来弥补免费用户并发和请�
 ## 使用示例
 
     //只使用一个用户的AccessKey 来调用
-    //com.ericwyn.api.baidu.BaiduYunApi api=new BaiduYunApi(PrivateCode.client_id_1, PrivateCode.client_secret_1);
+    //BaiduYunApi api=new BaiduYunApi(PrivateCode.client_id_1, PrivateCode.client_secret_1);
     
     //使用多个用户的AccseeKey 来调用
     ArrayList<AccessKey> accessKeys=new ArrayList<>();
     accessKeys.add(new AccessKey(PrivateCode.client_id_1, PrivateCode.client_secret_1));
     accessKeys.add(new AccessKey(PrivateCode.client_id_2, PrivateCode.client_secret_2));
+    
+    BaiduYunApi api=new BaiduYunApi(accessKeys);
 
     //词语的词向量接口测试
     ArrayList<String> wordVecTestList =new ArrayList<>();
@@ -46,6 +48,7 @@ Add topics，通过多组access key 信息，来弥补免费用户并发和请�
     System.out.println("============结果=============");
     
     
+更多使用例子请参考 `BaiduApiTest.java` 代码
 ## 项目依赖
  - okhttp 3.8.1
     - okio 1.13.0

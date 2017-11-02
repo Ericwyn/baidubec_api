@@ -17,7 +17,7 @@ import com.ericwyn.api.baidu.obj.WordVector;
 /**
  * Created by Ericwyn on 17-9-4.
  */
-public class BaiduYunTest {
+public class BaiduApiTest {
     public static void main(String[] args) {
 //        只使用一个用户的AccessKey
 //        com.ericwyn.api.baidu.BaiduYunApi api=new com.ericwyn.api.baidu.BaiduYunApi(PrivateCode.client_id_1, PrivateCode.client_secret_1);
